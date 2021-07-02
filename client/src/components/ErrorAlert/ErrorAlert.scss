@@ -1,0 +1,9 @@
+@import '/src/modules/styles/core/variables';
+
+.alert-box {
+  background-color: lighten(map-get($colors, red), 35%);
+  color: map-get($colors, red);
+  padding: 8px;
+  border-radius: 4px;
+  text-align: left;
+}

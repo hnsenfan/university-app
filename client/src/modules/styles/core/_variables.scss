@@ -1,0 +1,37 @@
+@import "../font_prodigy_sans";
+// Fonts
+//----------------------------------------------------------
+$header-font: "ProdigySans";
+$body-font: "ProdigySans";
+
+// Font Path
+$fontpath: "../fonts";
+
+// Colors
+//----------------------------------------------------------
+$colors: (
+  // Primary Colors
+  primary: #0052CC,
+  red: #ED193A,
+  
+  // Light Colors
+  white: #FFFFFF,
+  background-grey: #ECEFF0,
+  disabled-grey: #D8DBE0,
+  border-grey: #B9BEC6,
+
+  // Text Colors
+  text-black: #0D0D0F,
+  text-dark-grey: #51555C,
+  text-medium-grey: #90959F,
+  text-light-grey: #C5C8CE,
+  text-blue: #0177F0,
+  text-green: #006035,
+  text-red: #800800
+);
+
+$screen-sm: 320px;
+$screen-md: 640px;
+$screen-lg: 992px;
+
+.bg-white { background-color: map-get($colors, white) }

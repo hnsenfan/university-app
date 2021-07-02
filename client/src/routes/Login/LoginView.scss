@@ -1,0 +1,8 @@
+@import '/src/modules/styles/core/variables';
+
+.login-box {
+  width: 350px;
+  @media (min-width: $screen-md) {
+    width: 250px;
+  }
+}
