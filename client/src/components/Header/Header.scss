@@ -1,0 +1,8 @@
+@import '/src/modules/styles/core/variables';
+
+.header {
+  @media (max-width: $screen-md) {
+    display: none;
+  }
+}
+  

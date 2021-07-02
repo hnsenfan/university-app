@@ -1,0 +1,33 @@
+@import '/src/modules/styles/core/variables';
+
+.univ-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 750px;
+}
+
+.background-1 {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../../assets/univ-1.jpeg');
+}
+
+.background-2 {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../../assets/univ-2.jpeg');
+}
+
+.background-3 {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../../assets/univ-3.jpeg');
+}
+
+.fav-button {
+    padding: 6px 12px;
+    font-weight: 500;
+}
+
+.site-box {
+    padding: 4px 8px;
+    text-decoration: none;
+    color: map-get($colors, white);
+    border-radius: 24px;
+    background-color: lighten(map-get($colors, primary), 30%);
+    width: fit-content;
+}

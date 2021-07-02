@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import { withRouter } from 'react-router-dom'
-import axios from 'axios'
 import { PropTypes } from 'prop-types'
+
+import { END_POINTS } from '../../api'
 import ErrorAlert from '../../components/ErrorAlert/ErrorAlert'
 import Logo from '../../components/Icons/General/Logo'
 
@@ -27,11 +28,11 @@ const LoginView = (props) => {
   }
 
   useEffect(async () => {
-    const fetchUserList = async () => {
-      const result = await axios('http://localhost:8082/api/')
+    const getUserList = async () => {
+      const result = await END_POINTS.getUserList()
       setData({ userList: result.data.user_list })
     }
-    fetchUserList()
+    getUserList()
   }, [])
   return (
     <div className='page--whole'>
