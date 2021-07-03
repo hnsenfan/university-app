@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 
 import Dashboard from '../Icons/BottomBar/Dashboard'
-import Orders from '../Icons/BottomBar/Orders'
+import Universities from '../Icons/BottomBar/Universities'
 import Profile from '../Icons/BottomBar/Profile'
 
 import './BottomBar.scss'
@@ -14,7 +14,7 @@ const BottomBar = () => {
         <label>Dashboard</label>
       </NavLink>
       <NavLink exact activeClassName="active" to="/universities" className='item text-12'>
-        <Orders />
+        <Universities />
         <label>Universities</label>
       </NavLink>
       <NavLink exact activeClassName="active" to="/profile" className='item text-12'>
