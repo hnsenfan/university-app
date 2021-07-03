@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 a.active {
   color: map-get($colors, primary);
   path,

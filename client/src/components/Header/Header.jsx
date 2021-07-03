@@ -8,7 +8,9 @@ const Header = ({ location }) => {
     <header className='bg-white shadow pv-s header-bar'>
       <div className='d-flex align-items-center ml-xl'>
         <div className='d-flex align-items-center flex-basis-50 pv-m'>
-          University App
+          <NavLink to='/home'>
+            <label className='text-italic text-semibold text-black pointer'>University App</label>
+          </NavLink>
         </div>
         { location.pathname !== '/' &&
           <div className='d-flex align-items-center justify-content-between flex-basis-50 header'>
