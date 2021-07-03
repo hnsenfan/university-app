@@ -2,6 +2,7 @@ import { Fragment, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { END_POINTS } from '../../api'
 
+import ErrorAlert from '../../components/ErrorAlert/ErrorAlert'
 import NewsletterModal from '../../components/NewsletterModal/NewsletterModal'
 import UniversityCard from '../Universities/UniversityCard'
 
@@ -10,6 +11,8 @@ import './DashboardView.scss'
 const DashboardView = () => {
   const [isShowModal, setIsShowModal] = useState(false)
   const [favUniversityList, setFavUniversityList] = useState([])
+  const [isError, setIsError] = useState(false)
+  const [errorMsg, setErrorMsg] = useState()
 
   const closeModal = () => {
     setIsShowModal(false)
@@ -17,14 +20,20 @@ const DashboardView = () => {
 
   useEffect(async () => {
     const getUserList = async () => {
-      const result = await END_POINTS.getUserProfile()
-      setIsShowModal(!result.data.subscribe_newsletter)
-      setFavUniversityList(result.data.fav_universities)
+      await END_POINTS.getUserProfile()
+      .then((result) => {
+        setIsShowModal(!result.data.subscribe_newsletter)
+        setFavUniversityList(result.data.fav_universities)
+      }).catch(() => {
+        setIsError(true)
+        setErrorMsg('Something went wrong. Please refresh and try again.')
+      })
     }
     getUserList()
   }, [])
   return (
     <div className='page--whole'>
+      { isError && <ErrorAlert errMessage={errorMsg} /> }
       {/* Section for the Promotion Banner */}
       <section className='container--md'>
         <div className='d-flex justify-content-end radius-m pv-xl student-bg mv-l'>

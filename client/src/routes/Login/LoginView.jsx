@@ -12,6 +12,7 @@ const LoginView = (props) => {
   const [data, setData] = useState({ userList: [] })
   const [state, setState] = useState({ username: '', password: '' })
   const [isError, setIsError] = useState(false)
+  const [errorMsg, setErrorMsg] = useState()
 
   const handleChangeValue = (e) => {
     setState(prevState => ({ ...prevState, [e.target.id]: e.target.value }))
@@ -24,13 +25,19 @@ const LoginView = (props) => {
       props.history.push('/home')
     } else {
       setIsError(true)
+      setErrorMsg('The username and password you entered did not match our records. Please try again.')
     }
   }
 
   useEffect(async () => {
     const getUserList = async () => {
-      const result = await END_POINTS.getUserList()
-      setData({ userList: result.data })
+      await END_POINTS.getUserList()
+      .then((result) => {
+        setData({ userList: result.data })
+      }).catch(() => {
+        setIsError(true)
+        setErrorMsg('Something went wrong. Please refresh and try again.')
+      })
     }
     getUserList()
   }, [])
@@ -43,15 +50,15 @@ const LoginView = (props) => {
             <h1>Welcome to University App</h1>
             <div className='text-center'>
               <Logo />
-              { isError && <ErrorAlert errMessage='The username and password you entered did not match our records. Please try again.' /> }
+              { isError && <ErrorAlert errMessage={errorMsg} /> }
             </div>
             <div className='d-flex flex-column align-items-center'>
               <div className='d-flex flex-column mv-m login-box'>
-                <label>Username</label>
+                <label className='text-medium mv-xs'>Email Address</label>
                 <input type='text' id='username' onChange={ handleChangeValue } />
               </div>
               <div className='d-flex flex-column login-box'>
-                <label>Password</label>
+                <label className='text-medium mv-xs'>Password</label>
                 <input type='password' id='password' onChange={ handleChangeValue } />
               </div>
             </div>

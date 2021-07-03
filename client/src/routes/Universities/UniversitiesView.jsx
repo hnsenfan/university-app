@@ -1,6 +1,7 @@
 import { useCallback, useState } from 'react'
 
 import { END_POINTS } from '../../api'
+import ErrorAlert from '../../components/ErrorAlert/ErrorAlert'
 import Loading from '../../components/Loading/Loading'
 import SearchBar from '../../components/SearchBar/SearchBar'
 import UniversityCard from './UniversityCard'
@@ -13,6 +14,8 @@ const OrdersView = () => {
   const [data, setData] = useState({ universityList: [] })
   const [value, setValue] = useState()
   const [isFetching, setIsFetching] = useState(false)
+  const [isError, setIsError] = useState(false)
+  const [errorMsg, setErrorMsg] = useState()
 
   const handleChangeValue = (e) => {
     setValue(prevState => ({ ...prevState, [e.target.id]: e.target.value }))
@@ -24,9 +27,15 @@ const OrdersView = () => {
       name: value.name,
       country: value.country
     }
-    const result = await END_POINTS.getUniversityBySearchCat(params)
-    setData({ universityList: result.data })
-    setIsFetching(false)
+    await END_POINTS.getUniversityBySearchCat(params)
+    .then((result) => {
+      setData({ universityList: result.data })
+      setIsFetching(false)
+    }).catch(() => {
+      setIsFetching(false)
+      setIsError(true)
+      setErrorMsg('Something went wrong. Please refresh and try again.')
+    })
   })
 
   return (
@@ -41,6 +50,7 @@ const OrdersView = () => {
           />
         </div>
       </section>
+      { isError && <ErrorAlert errMessage={errorMsg} /> }
       <section className='container--md mt-m'>
         { isFetching
           ? <Loading />

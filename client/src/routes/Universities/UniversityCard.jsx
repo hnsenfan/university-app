@@ -8,10 +8,17 @@ import Star from '../../components/Icons/General/Star'
 
 const UniversityCard = ({ uniObject, isFavouriteProps }) => {
   const [isFavourite, setFavourite] = useState(false)
+  const [isError, setIsError] = useState(false)
+  const [errorMsg, setErrorMsg] = useState()
 
   const handleAddFavourite = useCallback(async() => {
     await END_POINTS.patchFavouriteUniversities(uniObject)
-    setFavourite(true)
+    .then(() => {
+      setFavourite(true)
+    }).catch(() => {
+      setIsError(true)
+      setErrorMsg('Something went wrong. Please refresh and try again.')
+    })
   })
 
   return (
@@ -22,6 +29,7 @@ const UniversityCard = ({ uniObject, isFavouriteProps }) => {
       </div>
       <div className='d-flex align-items-center justify-content-between mt-s'>
         <label className='text-medium-grey'>{uniObject.country}</label>
+        { isError && <label className='text-red'>{errorMsg}</label>}
         { isFavourite || isFavouriteProps
           ? <Star />
           : <button className='btn-primary fav-button' onClick={handleAddFavourite}>Add as Favourite</button>
