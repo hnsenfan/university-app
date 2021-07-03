@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 a.active {
   color: map-get($colors, primary);
   path,
@@ -31,7 +35,7 @@ button {
 input {
   border-radius: 8px;
   border: 1px solid map-get($colors, border-grey);
-  padding: 5px;
+  padding: 8px 12px;
 }
 
 .divider{
@@ -58,6 +62,14 @@ input {
 
 .radius-m {
   border-radius: 8px;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
 }
 
 .page--whole {

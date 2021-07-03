@@ -1,32 +1,28 @@
-import React, { Component } from 'react'
-// import axios from 'axios';
 import { NavLink } from 'react-router-dom'
+
 import Dashboard from '../Icons/BottomBar/Dashboard'
-import Orders from '../Icons/BottomBar/Orders'
+import Universities from '../Icons/BottomBar/Universities'
 import Profile from '../Icons/BottomBar/Profile'
 
 import './BottomBar.scss'
 
-class BottomBar extends Component {
-
-  render() {
-    return (
-      <div className='bar'>
-        <NavLink exact activeClassName="active" to="/home" className='item text-12'>
-          <Dashboard />
-          <label>Dashboard</label>
-        </NavLink>
-        <NavLink exact activeClassName="active" to="/posts" className='item text-12'>
-          <Orders />
-          <label>Posts</label>
-        </NavLink>
-        <NavLink exact activeClassName="active" to="/more" className='item text-12'>
-          <Profile />
-          <label>Profile</label>
-        </NavLink>
-      </div>
-    )
-  }
+const BottomBar = () => {
+  return (
+    <div className='bar'>
+      <NavLink exact activeClassName="active" to="/home" className='item text-12'>
+        <Dashboard />
+        <label>Dashboard</label>
+      </NavLink>
+      <NavLink exact activeClassName="active" to="/universities" className='item text-12'>
+        <Universities />
+        <label>Universities</label>
+      </NavLink>
+      <NavLink exact activeClassName="active" to="/profile" className='item text-12'>
+        <Profile />
+        <label>Profile</label>
+      </NavLink>
+    </div>
+  )
 }
 
 export default BottomBar
