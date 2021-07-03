@@ -30,4 +30,6 @@
     border-radius: 24px;
     background-color: lighten(map-get($colors, primary), 30%);
     width: fit-content;
+    margin-top: 4px;
+    margin-right: 4px;
 }

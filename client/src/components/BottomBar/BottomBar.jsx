@@ -12,9 +12,9 @@ const BottomBar = () => {
         <Dashboard />
         <label>Dashboard</label>
       </NavLink>
-      <NavLink exact activeClassName="active" to="/posts" className='item text-12'>
+      <NavLink exact activeClassName="active" to="/universities" className='item text-12'>
         <Orders />
-        <label>Posts</label>
+        <label>Universities</label>
       </NavLink>
       <NavLink exact activeClassName="active" to="/more" className='item text-12'>
         <Profile />

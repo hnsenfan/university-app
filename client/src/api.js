@@ -16,7 +16,16 @@ export const END_POINTS = {
   getUserList () {
     return callAxios(baseURL).get('/user_list')
   },
-  patchUserList (favUniversities) {
+  getUserProfile (username = 'hansen@developer.com') {
+    return callAxios(baseURL).get(`/user_profile?username=${username}`)
+  },
+  patchNewsletterSubscription(subscribe) {
+    return callAxios(baseURL).patch('/subscribe_newsletter', {
+      username: 'hansen@developer.com',
+      subscribe_newsletter: subscribe
+    })
+  },
+  patchFavouriteUniversities (favUniversities) {
     return callAxios(baseURL).patch('/fav_universities', {
       username: 'hansen@developer.com',
       fav_universities: favUniversities

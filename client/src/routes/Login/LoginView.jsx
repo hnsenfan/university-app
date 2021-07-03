@@ -30,7 +30,7 @@ const LoginView = (props) => {
   useEffect(async () => {
     const getUserList = async () => {
       const result = await END_POINTS.getUserList()
-      setData({ userList: result.data.user_list })
+      setData({ userList: result.data })
     }
     getUserList()
   }, [])

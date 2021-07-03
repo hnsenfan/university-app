@@ -5,11 +5,11 @@ import { END_POINTS } from '../../api'
 import ChevronRight from '../../components/Icons/General/ChevronRight'
 import Star from '../../components/Icons/General/MiniPlus'
 
-const UniversityCard = ({ uniObject }) => {
+const UniversityCard = ({ uniObject, isFavouriteProps }) => {
   const [isFavourite, setFavourite] = useState(false)
 
   const handleAddFavourite = useCallback(async() => {
-    await END_POINTS.patchUserList(uniObject)
+    await END_POINTS.patchFavouriteUniversities(uniObject)
     setFavourite(true)
   })
 
@@ -21,25 +21,27 @@ const UniversityCard = ({ uniObject }) => {
       </div>
       <div className='d-flex align-items-center justify-content-between mt-s'>
         <label className='text-medium-grey'>{uniObject.country}</label>
-        { isFavourite
+        { isFavourite || isFavouriteProps
           ? <Star />
           : <button className='btn-primary fav-button' onClick={handleAddFavourite}>Add as Favourite</button>
         }
       </div>
       <hr className='divider' />
-      { uniObject.web_pages.map((site, index) =>
-        <a key={index} className='d-flex align-items-center site-box' href={site} target='_blank' rel='noreferrer'>
-          <div className='mr-s'>{ site }</div>
-          <ChevronRight />
-        </a>
-      )}
-
+      <div className='d-flex flex-wrap-wrap'>
+        { uniObject.web_pages.map((site, index) =>
+          <a key={index} className='d-flex align-items-center site-box mt-xs' href={site} target='_blank' rel='noreferrer'>
+            <div className='mr-s'>{ site }</div>
+            <ChevronRight />
+          </a>
+        )}
+      </div>
     </div>
   )
 }
 
 UniversityCard.propTypes = {
-  uniObject: PropTypes.object
+  isFavouriteProps: PropTypes.bool,
+  uniObject: PropTypes.object,
 }
 
 export default UniversityCard
