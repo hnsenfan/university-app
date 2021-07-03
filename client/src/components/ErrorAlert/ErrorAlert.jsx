@@ -1,6 +1,7 @@
 import { PropTypes } from 'prop-types'
 
 import Error from '../Icons/General/Error'
+
 import './ErrorAlert.scss'
 
 const ErrorAlert = (props) => {

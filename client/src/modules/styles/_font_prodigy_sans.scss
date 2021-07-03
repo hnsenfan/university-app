@@ -1,5 +1,8 @@
 $fontpath: "../../fonts";
 
+//=================================================//
+//                     Regular                     //
+//=================================================//
 @font-face {
   font-family: "ProdigySans";
   font-style: normal;
@@ -7,6 +10,7 @@ $fontpath: "../../fonts";
   src: url($fontpath+"/ProdigySans/ProdigySans-Regular.woff2") format("woff2"),
     url($fontpath+"/ProdigySans/ProdigySans-Regular.woff") format("woff");
 }
+
 @font-face {
   font-family: "ProdigySans";
   font-style: italic;
@@ -15,6 +19,9 @@ $fontpath: "../../fonts";
     url($fontpath+"/ProdigySans/ProdigySans-Italic.woff") format("woff");
 }
 
+//=================================================//
+//                     Medium                     //
+//=================================================//
 @font-face {
   font-family: "ProdigySans";
   font-style: normal;
@@ -22,6 +29,7 @@ $fontpath: "../../fonts";
   src: url($fontpath+"/ProdigySans/ProdigySans-Medium.woff2") format("woff2"),
     url($fontpath+"/ProdigySans/ProdigySans-Medium.woff") format("woff");
 }
+
 @font-face {
   font-family: "ProdigySans";
   font-style: italic;
@@ -30,6 +38,9 @@ $fontpath: "../../fonts";
     url($fontpath+"/ProdigySans/ProdigySans-MediumItalic.woff") format("woff");
 }
 
+//=================================================//
+//                     Semibold                     //
+//=================================================//
 @font-face {
   font-family: "ProdigySans";
   font-style: normal;
@@ -37,6 +48,7 @@ $fontpath: "../../fonts";
   src: url($fontpath+"/ProdigySans/ProdigySans-SemiBold.woff2") format("woff2"),
     url($fontpath+"/ProdigySans/ProdigySans-SemiBold.woff") format("woff");
 }
+
 @font-face {
   font-family: "ProdigySans";
   font-style: italic;
@@ -45,6 +57,9 @@ $fontpath: "../../fonts";
     url($fontpath+"/ProdigySans/ProdigySans-SemiBoldItalic.woff") format("woff");
 }
 
+//=================================================//
+//                     Bold                     //
+//=================================================//
 @font-face {
   font-family: "Inter";
   font-style: normal;
@@ -52,6 +67,7 @@ $fontpath: "../../fonts";
   src: url($fontpath+"/ProdigySans/ProdigySans-Bold.woff2") format("woff2"),
     url($fontpath+"/ProdigySans/ProdigySans-Bold.woff") format("woff");
 }
+
 @font-face {
   font-family: "Inter";
   font-style: italic;
@@ -60,6 +76,9 @@ $fontpath: "../../fonts";
     url($fontpath+"/ProdigySans/ProdigySans-BoldItalic.woff") format("woff");
 }
 
+//=================================================//
+//                     Extra Bold                     //
+//=================================================//
 @font-face {
   font-family: "Inter";
   font-style: normal;
@@ -67,6 +86,7 @@ $fontpath: "../../fonts";
   src: url($fontpath+"/ProdigySans/ProdigySans-ExtraBold.woff2") format("woff2"),
     url($fontpath+"/ProdigySans/ProdigySans-ExtraBold.woff") format("woff");
 }
+
 @font-face {
   font-family: "Inter";
   font-style: italic;

@@ -1,1 +1,12 @@
-{"user_list":[{"username":"hansen@developer.com","password":"12345","subscribe_newsletter":false,"fav_universities":[{"domains":["metu.edu.tr"],"web_pages":["http://www.metu.edu.tr/"],"name":"Middle East Technical University","alpha_two_code":"TR","state-province":null,"country":"Turkey"}]}]}
+{
+	"user_list": [{
+		"username": "hansen@developer.com",
+		"password": "12345",
+		"full_name": "Hansen Fan",
+		"nationality": "Indonesian",
+		"residence": "Malaysia",
+		"current_school": "SMA Negeri 1 Balikpapan",
+		"subscribe_newsletter": false,
+		"fav_universities": []
+	}]
+}

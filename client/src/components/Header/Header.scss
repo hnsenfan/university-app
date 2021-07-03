@@ -1,8 +1,12 @@
 @import '/src/modules/styles/core/variables';
 
+.header-bar {
+  height: 48px;
+}
+
 .header {
   @media (max-width: $screen-md) {
-    display: none;
+    display: none !important;
   }
 }
   

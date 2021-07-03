@@ -2,8 +2,8 @@ import { Fragment, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { END_POINTS } from '../../api'
 
-import UniversityCard from '../Universities/UniversityCard'
 import NewsletterModal from '../../components/NewsletterModal/NewsletterModal'
+import UniversityCard from '../Universities/UniversityCard'
 
 import './DashboardView.scss'
 
@@ -25,6 +25,7 @@ const DashboardView = () => {
   }, [])
   return (
     <div className='page--whole'>
+      {/* Section for the Promotion Banner */}
       <section className='container--md'>
         <div className='d-flex justify-content-end radius-m pv-xl student-bg mv-l'>
           <div className='d-flex flex-column p-xl'>
@@ -36,13 +37,14 @@ const DashboardView = () => {
           </div>
         </div>
       </section>
+      {/* Section for Favourite Universities preferred by the user */}
       { favUniversityList && favUniversityList.length > 0 &&
         <Fragment>
           <aside className='container--md mt-s'>
             <label className='text-medium text-medium-grey'>Your Favourite Universities</label>
           </aside>
-          {/* Section for Order Details (customer and vendor) */}
           <section className='container--md mt-m'>
+            {/* Below is to loop university list and render university cards */}
             { favUniversityList.map((uni, index) =>
               <UniversityCard key={index} uniObject={uni} isFavouriteProps />
             )}

@@ -1,19 +1,5 @@
 @import '/src/modules/styles/core/variables';
 
-.search-page {
-  flex-direction: row;
-  @media (max-width: $screen-md) {
-    flex-direction: column;
-  }
-}
-
-.search-container {
-  flex-basis: 50%;
-  @media (max-width: $screen-md) {
-    flex-basis: 100%;
-  }
-}
-
 input[type=search] {
   padding: 12px;
   font-size: 16px;

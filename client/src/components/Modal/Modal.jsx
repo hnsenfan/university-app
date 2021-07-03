@@ -2,6 +2,8 @@ import PropTypes from 'prop-types'
 
 import Close from '../Icons/General/Close'
 
+import './Modal.scss'
+
 const Modal = ({ handleClose, show, children }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none"
   return (

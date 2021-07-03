@@ -1,9 +1,10 @@
-import { PropTypes } from 'prop-types'
 import { useCallback, useState } from 'react'
+import PropTypes from 'prop-types'
+
 import { END_POINTS } from '../../api'
 
 import ChevronRight from '../../components/Icons/General/ChevronRight'
-import Star from '../../components/Icons/General/MiniPlus'
+import Star from '../../components/Icons/General/Star'
 
 const UniversityCard = ({ uniObject, isFavouriteProps }) => {
   const [isFavourite, setFavourite] = useState(false)

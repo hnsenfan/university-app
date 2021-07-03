@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+
 import Dashboard from '../Icons/BottomBar/Dashboard'
 import Orders from '../Icons/BottomBar/Orders'
 import Profile from '../Icons/BottomBar/Profile'
@@ -16,7 +17,7 @@ const BottomBar = () => {
         <Orders />
         <label>Universities</label>
       </NavLink>
-      <NavLink exact activeClassName="active" to="/more" className='item text-12'>
+      <NavLink exact activeClassName="active" to="/profile" className='item text-12'>
         <Profile />
         <label>Profile</label>
       </NavLink>

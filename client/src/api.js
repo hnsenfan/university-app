@@ -19,6 +19,14 @@ export const END_POINTS = {
   getUserProfile (username = 'hansen@developer.com') {
     return callAxios(baseURL).get(`/user_profile?username=${username}`)
   },
+  patchUserProfile(params) {
+    return callAxios(baseURL).patch('/user_profile', {
+      username: 'hansen@developer.com',
+      full_name: params.full_name,
+      nationality: params.nationality,
+      residence: params.residence
+    })
+  },
   patchNewsletterSubscription(subscribe) {
     return callAxios(baseURL).patch('/subscribe_newsletter', {
       username: 'hansen@developer.com',

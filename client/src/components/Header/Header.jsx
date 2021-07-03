@@ -5,9 +5,9 @@ import './Header.scss'
 
 const Header = ({ location }) => {
   return (
-    <header className='bg-white shadow pv-l'>
+    <header className='bg-white shadow pv-s header-bar'>
       <div className='d-flex align-items-center ml-xl'>
-        <div className='d-flex align-items-center flex-basis-50'>
+        <div className='d-flex align-items-center flex-basis-50 pv-m'>
           University App
         </div>
         { location.pathname !== '/' &&
@@ -18,7 +18,7 @@ const Header = ({ location }) => {
             <NavLink exact activeClassName="active" to="/universities" className='item'>
               <label className='text-bold text-18 pointer'>Universities</label>
             </NavLink>
-            <NavLink exact activeClassName="active" to="/more" className='item'>
+            <NavLink exact activeClassName="active" to="/profile" className='item'>
               <label className='text-bold text-18 pointer'>Profile</label>
             </NavLink>
           </div>
