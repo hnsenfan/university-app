@@ -10,7 +10,7 @@ import './UniversitiesView.scss'
 
 const randomDigit = Math.floor(Math.random() * 3) + 1
 
-const OrdersView = () => {
+const UniversitiesView = () => {
   const [data, setData] = useState({ universityList: [] })
   const [value, setValue] = useState()
   const [isFetching, setIsFetching] = useState(false)
@@ -63,4 +63,4 @@ const OrdersView = () => {
   )
 }
 
-export default OrdersView
+export default UniversitiesView

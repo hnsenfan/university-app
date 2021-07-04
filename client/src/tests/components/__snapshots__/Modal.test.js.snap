@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should handle handleClose handler 1`] = `
+<div
+  className="modal display-none"
+>
+  <section
+    className="modal-main"
+  >
+    <div
+      className="close-btn"
+      onClick={[MockFunction]}
+    >
+      <Close />
+    </div>
+  </section>
+</div>
+`;
+
+exports[`should test Modal component 1`] = `
+<div
+  className="modal display-none"
+>
+  <section
+    className="modal-main"
+  >
+    <div
+      className="close-btn"
+    >
+      <Close />
+    </div>
+  </section>
+</div>
+`;

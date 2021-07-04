@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test NewsletterModal component 1`] = `
+<Modal>
+  <h1>
+    Join our mailing list!
+  </h1>
+  <p>
+    We really want you to want us. Sign up to receive email updates on new features, university, specials, and more
+  </p>
+  <button
+    className="btn-primary"
+    onClick={[Function]}
+  >
+    Yes, subscribe me to this list
+  </button>
+  <p>
+    You won't be subscribed if you don't click the confirmation button above.
+  </p>
+</Modal>
+`;

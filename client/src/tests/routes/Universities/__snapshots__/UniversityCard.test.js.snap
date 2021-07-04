@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test UniversityCard component with default state of empty object 1`] = `
+<div
+  className="d-flex flex-column radius-m p-m bg-white mv-l"
+>
+  <div
+    className="d-flex justify-content-between"
+  >
+    <label
+      className="text-15 text-medium"
+    />
+    <span
+      className="text-medium-grey"
+    />
+  </div>
+  <div
+    className="d-flex align-items-center justify-content-between mt-s"
+  >
+    <label
+      className="text-medium-grey"
+    />
+    <button
+      className="btn-primary fav-button"
+      onClick={[Function]}
+    >
+      Add as Favourite
+    </button>
+  </div>
+  <hr
+    className="divider"
+  />
+  <div
+    className="d-flex flex-wrap-wrap"
+  />
+</div>
+`;
+
+exports[`should test to render UniversityCard component with sample response 1`] = `
+<div
+  className="d-flex flex-column radius-m p-m bg-white mv-l"
+>
+  <div
+    className="d-flex justify-content-between"
+  >
+    <label
+      className="text-15 text-medium"
+    >
+      Moldova State University of Medicine and Pharmacy "N. Testemitsanu"
+    </label>
+    <span
+      className="text-medium-grey"
+    >
+      MD
+    </span>
+  </div>
+  <div
+    className="d-flex align-items-center justify-content-between mt-s"
+  >
+    <label
+      className="text-medium-grey"
+    >
+      Moldova, Republic of
+    </label>
+    <button
+      className="btn-primary fav-button"
+      onClick={[Function]}
+    >
+      Add as Favourite
+    </button>
+  </div>
+  <hr
+    className="divider"
+  />
+  <div
+    className="d-flex flex-wrap-wrap"
+  >
+    <a
+      className="d-flex align-items-center site-box mt-xs"
+      href="http://www.usmf.md/"
+      key="0"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <div
+        className="mr-s"
+      >
+        http://www.usmf.md/
+      </div>
+      <ChevronRight />
+    </a>
+  </div>
+</div>
+`;

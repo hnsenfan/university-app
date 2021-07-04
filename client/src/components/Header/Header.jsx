@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 
 import './Header.scss'
 
-const Header = ({ location }) => {
+const Header = ({ location = {} }) => {
   return (
     <header className='bg-white shadow pv-s header-bar'>
       <div className='d-flex align-items-center ml-xl'>
         <div className='d-flex align-items-center flex-basis-50 pv-m'>
           <NavLink to='/home'>
-            <label className='text-italic text-semibold text-black pointer'>University App</label>
+            <label className='text-italic text-semibold text-black pointer ada'>University App</label>
           </NavLink>
         </div>
         { location.pathname !== '/' &&

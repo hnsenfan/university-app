@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test LoginView component 1`] = `
+<div
+  className="page--whole"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <section
+      className="container--md"
+    >
+      <div
+        className="d-flex flex-column align-items-center bg-white radius-m p-l lh-m"
+      >
+        <h1>
+          Welcome to University App
+        </h1>
+        <div
+          className="text-center"
+        >
+          <Logo />
+        </div>
+        <div
+          className="d-flex flex-column align-items-center"
+        >
+          <div
+            className="d-flex flex-column mv-m login-box"
+          >
+            <label
+              className="text-medium mv-xs"
+            >
+              Email Address
+            </label>
+            <input
+              id="username"
+              onChange={[Function]}
+              type="text"
+            />
+          </div>
+          <div
+            className="d-flex flex-column login-box"
+          >
+            <label
+              className="text-medium mv-xs"
+            >
+              Password
+            </label>
+            <input
+              id="password"
+              onChange={[Function]}
+              type="password"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      className="container--md mt-l"
+    >
+      <button
+        className="btn-primary btn-block text-medium text-16"
+        disabled={false}
+        type="submit"
+      >
+        Login
+      </button>
+    </section>
+  </form>
+</div>
+`;

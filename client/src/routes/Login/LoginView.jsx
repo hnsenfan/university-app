@@ -11,6 +11,7 @@ import './LoginView.scss'
 const LoginView = (props) => {
   const [data, setData] = useState({ userList: [] })
   const [state, setState] = useState({ username: '', password: '' })
+  const [isLoginDisabled, setLoginDisabled] = useState(false)
   const [isError, setIsError] = useState(false)
   const [errorMsg, setErrorMsg] = useState()
 
@@ -20,11 +21,14 @@ const LoginView = (props) => {
 
   const handleLogin = (e) => {
     e.preventDefault()
+    setLoginDisabled(true)
     const userObject = data.userList.find(x => x.username === state.username)
     if (userObject && userObject.password === state.password) {
+      setLoginDisabled(false)
       props.history.push('/home')
     } else {
       setIsError(true)
+      setLoginDisabled(false)
       setErrorMsg('The username and password you entered did not match our records. Please try again.')
     }
   }
@@ -65,7 +69,13 @@ const LoginView = (props) => {
           </div>
         </section>
         <section className='container--md mt-l'>
-          <button className='btn-primary btn-block text-medium text-16' type='submit'>Login</button>
+          <button
+            className='btn-primary btn-block text-medium text-16'
+            type='submit'
+            disabled={isLoginDisabled}
+          >
+            Login
+          </button>
         </section>
       </form>
     </div>
