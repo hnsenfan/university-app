@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test Header component 1`] = `
+<header
+  className="bg-white shadow pv-s header-bar"
+>
+  <div
+    className="d-flex align-items-center ml-xl"
+  >
+    <div
+      className="d-flex align-items-center flex-basis-50 pv-m"
+    >
+      <NavLink
+        to="/home"
+      >
+        <label
+          className="text-italic text-semibold text-black pointer ada"
+        >
+          University App
+        </label>
+      </NavLink>
+    </div>
+    <div
+      className="d-flex align-items-center justify-content-between flex-basis-50 header"
+    >
+      <NavLink
+        activeClassName="active"
+        className="item"
+        exact={true}
+        to="/home"
+      >
+        <label
+          className="text-bold text-18 pointer"
+        >
+          Dashboard
+        </label>
+      </NavLink>
+      <NavLink
+        activeClassName="active"
+        className="item"
+        exact={true}
+        to="/universities"
+      >
+        <label
+          className="text-bold text-18 pointer"
+        >
+          Universities
+        </label>
+      </NavLink>
+      <NavLink
+        activeClassName="active"
+        className="item"
+        exact={true}
+        to="/profile"
+      >
+        <label
+          className="text-bold text-18 pointer"
+        >
+          Profile
+        </label>
+      </NavLink>
+    </div>
+  </div>
+</header>
+`;

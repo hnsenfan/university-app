@@ -1,0 +1,202 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test BottomBar component 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <BottomBar>
+      <div
+        className="bar"
+      >
+        <NavLink
+          activeClassName="active"
+          className="item text-12"
+          exact={true}
+          to="/home"
+        >
+          <Link
+            aria-current={null}
+            className="item text-12"
+            to={
+              Object {
+                "hash": "",
+                "pathname": "/home",
+                "search": "",
+                "state": null,
+              }
+            }
+          >
+            <LinkAnchor
+              aria-current={null}
+              className="item text-12"
+              href="/home"
+              navigate={[Function]}
+            >
+              <a
+                aria-current={null}
+                className="item text-12"
+                href="/home"
+                onClick={[Function]}
+              >
+                <Dashboard>
+                  <svg
+                    fill="none"
+                    height="20"
+                    viewBox="0 0 21 20"
+                    width="21"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.21429 8.57143H6.92857C7.11801 8.57143 7.29969 8.64668 7.43365 8.78064C7.5676 8.91459 7.64286 9.09627 7.64286 9.28572V19.2857C7.64286 19.4752 7.5676 19.6568 7.43365 19.7908C7.29969 19.9247 7.11801 20 6.92857 20H2.64286C2.07454 20 1.52949 19.7742 1.12763 19.3724C0.725765 18.9705 0.5 18.4255 0.5 17.8571V9.28572C0.5 9.09627 0.575255 8.91459 0.709209 8.78064C0.843164 8.64668 1.02485 8.57143 1.21429 8.57143Z"
+                      fill="#6C7988"
+                    />
+                    <path
+                      d="M2.64286 0H18.3571C18.9255 0 19.4705 0.225765 19.8724 0.627628C20.2742 1.02949 20.5 1.57454 20.5 2.14286V6.42857C20.5 6.61801 20.4247 6.79969 20.2908 6.93365C20.1568 7.0676 19.9752 7.14286 19.7857 7.14286H1.21429C1.02485 7.14286 0.843164 7.0676 0.709209 6.93365C0.575255 6.79969 0.5 6.61801 0.5 6.42857V2.14286C0.5 1.57454 0.725765 1.02949 1.12763 0.627628C1.52949 0.225765 2.07454 0 2.64286 0Z"
+                      fill="#6C7988"
+                    />
+                    <path
+                      d="M9.78572 8.57143H19.7857C19.9752 8.57143 20.1568 8.64668 20.2908 8.78064C20.4247 8.91459 20.5 9.09627 20.5 9.28572V17.8571C20.5 18.4255 20.2742 18.9705 19.8724 19.3724C19.4705 19.7742 18.9255 20 18.3571 20H9.78572C9.59627 20 9.41459 19.9247 9.28064 19.7908C9.14668 19.6568 9.07143 19.4752 9.07143 19.2857V9.28572C9.07143 9.09627 9.14668 8.91459 9.28064 8.78064C9.41459 8.64668 9.59627 8.57143 9.78572 8.57143Z"
+                      fill="#6C7988"
+                    />
+                  </svg>
+                </Dashboard>
+                <label>
+                  Dashboard
+                </label>
+              </a>
+            </LinkAnchor>
+          </Link>
+        </NavLink>
+        <NavLink
+          activeClassName="active"
+          className="item text-12"
+          exact={true}
+          to="/universities"
+        >
+          <Link
+            aria-current={null}
+            className="item text-12"
+            to={
+              Object {
+                "hash": "",
+                "pathname": "/universities",
+                "search": "",
+                "state": null,
+              }
+            }
+          >
+            <LinkAnchor
+              aria-current={null}
+              className="item text-12"
+              href="/universities"
+              navigate={[Function]}
+            >
+              <a
+                aria-current={null}
+                className="item text-12"
+                href="/universities"
+                onClick={[Function]}
+              >
+                <Universities>
+                  <svg
+                    fill="none"
+                    height="23"
+                    viewBox="0 0 21 23"
+                    width="21"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M17.7942 2.99739H12.9311C12.9311 2.36172 12.6749 1.75208 12.2189 1.30259C11.7629 0.853105 11.1445 0.600586 10.4996 0.600586C9.8547 0.600586 9.23623 0.853105 8.78023 1.30259C8.32423 1.75208 8.06805 2.36172 8.06805 2.99739H3.20498C2.56031 2.99809 1.94225 3.25083 1.4864 3.70016C1.03055 4.1495 0.774145 4.75873 0.773438 5.39419V20.5739C0.774145 21.2094 1.03055 21.8186 1.4864 22.268C1.94225 22.7173 2.56031 22.97 3.20498 22.9707H17.7942C18.4389 22.97 19.0569 22.7173 19.5128 22.268C19.9686 21.8186 20.225 21.2094 20.2257 20.5739V5.39419C20.225 4.75873 19.9686 4.1495 19.5128 3.70016C19.0569 3.25083 18.4389 2.99809 17.7942 2.99739ZM10.4996 2.19845C10.7145 2.19858 10.9206 2.28279 11.0726 2.4326C11.2245 2.5824 11.31 2.78554 11.3101 2.99739H9.68908C9.68921 2.78554 9.77464 2.5824 9.92661 2.4326C10.0786 2.28279 10.2847 2.19858 10.4996 2.19845ZM5.63651 10.1878H8.87856C9.09352 10.1878 9.29968 10.1036 9.45168 9.95379C9.60368 9.80396 9.68908 9.60075 9.68908 9.38886C9.68908 9.17697 9.60368 8.97375 9.45168 8.82393C9.29968 8.6741 9.09352 8.58992 8.87856 8.58992H5.63651C5.42155 8.58992 5.21539 8.6741 5.06339 8.82393C4.91139 8.97375 4.826 9.17697 4.826 9.38886C4.826 9.60075 4.91139 9.80396 5.06339 9.95379C5.21539 10.1036 5.42155 10.1878 5.63651 10.1878ZM5.06339 12.0197C5.21539 11.8698 5.42155 11.7857 5.63651 11.7857H12.1206C12.3356 11.7857 12.5417 11.8698 12.6937 12.0197C12.8457 12.1695 12.9311 12.3727 12.9311 12.5846C12.9311 12.7965 12.8457 12.9997 12.6937 13.1495C12.5417 13.2994 12.3356 13.3835 12.1206 13.3835H5.63651C5.42155 13.3835 5.21539 13.2994 5.06339 13.1495C4.91139 12.9997 4.826 12.7965 4.826 12.5846C4.826 12.3727 4.91139 12.1695 5.06339 12.0197Z"
+                      fill="#6C7988"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </Universities>
+                <label>
+                  Universities
+                </label>
+              </a>
+            </LinkAnchor>
+          </Link>
+        </NavLink>
+        <NavLink
+          activeClassName="active"
+          className="item text-12"
+          exact={true}
+          to="/profile"
+        >
+          <Link
+            aria-current={null}
+            className="item text-12"
+            to={
+              Object {
+                "hash": "",
+                "pathname": "/profile",
+                "search": "",
+                "state": null,
+              }
+            }
+          >
+            <LinkAnchor
+              aria-current={null}
+              className="item text-12"
+              href="/profile"
+              navigate={[Function]}
+            >
+              <a
+                aria-current={null}
+                className="item text-12"
+                href="/profile"
+                onClick={[Function]}
+              >
+                <Profile>
+                  <svg
+                    fill="none"
+                    height="21"
+                    viewBox="0 0 19 21"
+                    width="19"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.9941 3.60669C13.9941 5.86087 12.1908 9.19706 9.48575 9.19706C6.78073 9.19706 4.97739 5.86087 4.97739 3.60669C4.97739 2.34435 5.60856 0 9.48575 0C13.5433 0 13.9941 2.25418 13.9941 3.60669Z"
+                      fill="#6C7988"
+                    />
+                    <path
+                      d="M0.73945 17.8531C0.37878 15.1481 1.00995 10.6397 9.48567 10.6397C17.9614 10.6397 18.6827 15.0579 18.2319 17.8531C18.0516 19.1155 16.8794 20.0171 15.5269 20.0171H3.44447C2.09196 20.0171 0.919784 19.1155 0.73945 17.8531Z"
+                      fill="#6C7988"
+                    />
+                  </svg>
+                </Profile>
+                <label>
+                  Profile
+                </label>
+              </a>
+            </LinkAnchor>
+          </Link>
+        </NavLink>
+      </div>
+    </BottomBar>
+  </Router>
+</BrowserRouter>
+`;

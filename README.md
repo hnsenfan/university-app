@@ -66,6 +66,13 @@ npm start
 Watch for console message `Compiled successfully! You can now view client in the browser.`
 Then open `http://localhost:3082` to view it in the browser- your development site will show up there. The page will automatically reload if you make any changes and save the code.
 
+
+## Demo - What you need
+Currently for early development and testing phase (as per July 2021), only 1 user can be used to test the available features. \
+This is caused by the username is already passed as a hardcoded parameters across all the API calls from the client \
+
+From the server side, you can check the user data in `users.json` for the username and password in order to login through the client's site 
+
 ## Available Scripts
 
 #### In both of the project directories, you can run:
@@ -73,7 +80,7 @@ Then open `http://localhost:3082` to view it in the browser- your development si
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3082](http://localhost:3082) to view it in the browser.
+Open [http://localhost:3082](http://localhost:3082) to view the frontend UI in the browser.
 
 The page will reload if you make edits.
 
@@ -81,10 +88,15 @@ The page will reload if you make edits.
 ### `npm run lint`
 Lint all `.js` files in `src` folder - in order to catch any lint errors
 
-### `npm test`
+### `npm run test`
 
 Launches the test runner in the interactive watch mode.\
+JS tests files for each components are located in `src/tests` \
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run test:coverage`
+
+Launches the test runner for one time and at the end, a coverage information will be reported in the output .\
 
 ### `npm build`
 
@@ -96,7 +108,7 @@ Your app is ready to be deployed!
 
 ## Credits
 
-The iconset was designed by Flaticon (https://www.flaticon.com)
+The iconset was designed by Flaticon (https://www.flaticon.com) \
 The images were taken from shutterstock (https://www.shutterstock.com/)
 
 ## Authors

@@ -5,14 +5,14 @@ import MiniSearch from '../Icons/General/MiniSearch'
 
 import './SearchBar.scss'
 
-const SearchBar = ({ optionArray, handleChangeValue, handleSubmitSearch }) => {
+const SearchBar = ({ optionArray = [], handleChangeValue, handleSubmitSearch }) => {
   return (
     <Fragment>
       <div className='d-flex flex-wrap-wrap justify-content-center'>
         { optionArray.map((option, index) =>
           <div key={index} className='d-flex flex-grow-1 mt-m mr-s'>
             <MiniSearch />
-            <input type='search' id={option} placeholder={`Search by ${option}`} onChange={ handleChangeValue }/>
+            <input type='search' className={option} placeholder={`Search by ${option}`} onChange={ handleChangeValue } />
           </div>
         )}
       </div>

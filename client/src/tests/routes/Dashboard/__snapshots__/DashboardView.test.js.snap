@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test DashboardView component 1`] = `
+<div
+  className="page--whole"
+>
+  <section
+    className="container--md"
+  >
+    <div
+      className="d-flex justify-content-end radius-m pv-xl student-bg mv-l"
+    >
+      <div
+        className="d-flex flex-column p-xl"
+      >
+        <h1
+          className="promotion-title"
+        >
+          Building A Better World One Student At A Time
+        </h1>
+        <p
+          className="promotion-desc"
+        >
+          We have matched more than 100,000 students across the world with their dream universities. Find yours on our site now!
+        </p>
+        <Link
+          to="/universities"
+        >
+          <button
+            className="btn-primary btn-block"
+          >
+            GO
+          </button>
+        </Link>
+      </div>
+    </div>
+  </section>
+  <NewsletterModal
+    handleClose={[Function]}
+    show={false}
+  />
+</div>
+`;

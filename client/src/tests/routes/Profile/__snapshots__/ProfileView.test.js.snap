@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test ProfileView component 1`] = `
+<div
+  className="page--whole"
+>
+  <section
+    className="container--sm"
+  >
+    <div
+      className="d-flex justify-content-center bg-white radius-m profile-box"
+    >
+      <div
+        className="profile-pic"
+      >
+        <img
+          src="user.svg"
+          style={
+            Object {
+              "height": "65px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="d-flex flex-column align-items-center"
+      >
+        <label
+          className="text-medium text-black text-18 mv-s"
+        />
+        <span
+          className="text-medium-grey"
+        />
+        <Link
+          to="/"
+        >
+          <button
+            className="mt-s btn-logout"
+          >
+            Logout
+          </button>
+        </Link>
+      </div>
+    </div>
+  </section>
+  <section
+    className="container--sm mt-s"
+  >
+    <div
+      className="d-flex flex-column bg-white lh-m radius-m p-m mt-s "
+    >
+      <label
+        className="text-medium mv-xs"
+      >
+        Full Name
+      </label>
+      <input
+        id="full_name"
+        onChange={[Function]}
+        type="text"
+      />
+      <label
+        className="text-medium mv-xs"
+      >
+        Nationality
+      </label>
+      <input
+        id="nationality"
+        onChange={[Function]}
+        type="text"
+      />
+      <label
+        className="text-medium mv-xs"
+      >
+        Country of Residence
+      </label>
+      <input
+        id="residence"
+        onChange={[Function]}
+        type="text"
+      />
+      <label
+        className="text-medium mv-xs"
+      >
+        Email Address
+      </label>
+      <input
+        disabled={true}
+        id="username"
+        type="text"
+      />
+    </div>
+  </section>
+  <section
+    className="container--sm mt-l"
+  >
+    <button
+      className="btn-primary btn-block text-medium text-16"
+      onClick={[Function]}
+    >
+      Update Profile
+    </button>
+  </section>
+</div>
+`;

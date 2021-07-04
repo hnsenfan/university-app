@@ -6,7 +6,7 @@ import { END_POINTS } from '../../api'
 import ChevronRight from '../../components/Icons/General/ChevronRight'
 import Star from '../../components/Icons/General/Star'
 
-const UniversityCard = ({ uniObject, isFavouriteProps }) => {
+const UniversityCard = ({ uniObject = {}, isFavouriteProps }) => {
   const [isFavourite, setFavourite] = useState(false)
   const [isError, setIsError] = useState(false)
   const [errorMsg, setErrorMsg] = useState()
@@ -37,7 +37,7 @@ const UniversityCard = ({ uniObject, isFavouriteProps }) => {
       </div>
       <hr className='divider' />
       <div className='d-flex flex-wrap-wrap'>
-        { uniObject.web_pages.map((site, index) =>
+        { uniObject.web_pages && uniObject.web_pages.map((site, index) =>
           <a key={index} className='d-flex align-items-center site-box mt-xs' href={site} target='_blank' rel='noreferrer'>
             <div className='mr-s'>{ site }</div>
             <ChevronRight />

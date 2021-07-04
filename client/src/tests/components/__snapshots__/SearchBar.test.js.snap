@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should handle handleSubmitSearch handler 1`] = `
+<Fragment>
+  <div
+    className="d-flex flex-wrap-wrap justify-content-center"
+  />
+  <div
+    className="d-flex justify-content-center mt-l"
+  >
+    <button
+      className="btn-primary text-bold text-18"
+      onClick={[MockFunction]}
+    >
+      Search
+    </button>
+  </div>
+</Fragment>
+`;
+
+exports[`should test SearchBar component 1`] = `
+<Fragment>
+  <div
+    className="d-flex flex-wrap-wrap justify-content-center"
+  />
+  <div
+    className="d-flex justify-content-center mt-l"
+  >
+    <button
+      className="btn-primary text-bold text-18"
+    >
+      Search
+    </button>
+  </div>
+</Fragment>
+`;

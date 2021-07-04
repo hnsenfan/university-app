@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test Loading component 1`] = `
+<label
+  className="d-flex justify-content-center text-semibold text-18"
+>
+  Loading...
+</label>
+`;
